@@ -37,7 +37,7 @@ Stop Nuxeo
 
 Copy the jar file located in target folder in nuxeo
 ```
-scp -r ./*.jar root @ servername: / path / to / nuxeo / nxserver / bundles /
+scp -r ./*.jar root@servername:/path/to/nuxeo/nxserver/bundles/
 ```
 
 Restart Nuxeo
