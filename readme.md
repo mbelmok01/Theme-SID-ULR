@@ -13,7 +13,7 @@ This effectively overrides the default theme proposed.
  
 Here's what to do to use it :
 
-1. To start, move in ** NUXEO_HOME / nxserver / nuxeo.war / incl / **.
+1. To start, move in **NUXEO_HOME/nxserver/nuxeo.war/incl/**.
 2. Then select the template to override.
 3. Create a file with the same name in **/src/main/resources/web/nuxeo.war/incl/**
 4. Copy the contents of the template in the newly created file.
