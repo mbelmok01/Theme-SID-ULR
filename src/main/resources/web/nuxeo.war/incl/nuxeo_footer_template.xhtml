@@ -1,0 +1,51 @@
+<f:subview
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:h="http://java.sun.com/jsf/html"
+  xmlns:c="http://java.sun.com/jstl/core"
+  xmlns:nxu="http://nuxeo.org/nxweb/util"
+  xmlns:ui="http://java.sun.com/jsf/facelets"
+  xmlns:f="http://java.sun.com/jsf/core"
+  xmlns:nxl="http://nuxeo.org/nxforms/layout"
+  id="footer">
+
+<ui:insert name="footer">
+  <div class="footerDefaultLinks">
+    <nxl:widget name="footerLinks" mode="view" value="#{currentDocument}" />
+
+    <div class="copyrights">
+      <h:outputFormat value="#{messages['label.login.copyright']}">
+        <f:param value="#{copyrightCurrentYear}" />
+      </h:outputFormat>
+    </div>
+
+    <br></br>
+    <br></br>
+    <br></br>
+
+    <div class="presCopyrightsContent">
+      <!-- <h:graphicImage value="/img/ulr-pres/logo_pres.gif" alt="Logo universite de La Rochelle" /> -->
+      <ul class="presMembers">
+        <li><h:outputText value="#{messages['label.university_of_poitiers']}" /></li>
+        <li><h:outputText value="#{messages['label.university_of_la_rochelle']}" /></li>
+        <li><h:outputText value="#{messages['label.university_of_limoges']}" /></li>
+        <li><h:outputText value="#{messages['label.ensma']}" /></li>
+        <li><h:outputText value="#{messages['label.ensci']}" /></li>
+      </ul>
+    </div>
+    <!-- <div class="clear">xxxxxxxxxxxxxxxxxx</div> -->
+  </div>
+  
+
+  <!-- <ui:insert name="language_selector">
+    <h:form id="langSelectForm">
+      <h:outputText value="#{messages['label.selectLocale']}" />
+      <h:selectOneMenu value="#{localeSelector.localeString}" styleClass="langSelect" id="langSelectMenu">
+        <f:selectItems value="#{localeSelector.supportedLocales}"/>
+      </h:selectOneMenu>
+      <h:commandButton action="#{localeSelector.select}" value="#{messages['command.changeLocale']}" class="langSubmit" id="langSelectSubmitButton" />
+    </h:form>
+  </ui:insert> -->
+
+</ui:insert>
+
+</f:subview>
