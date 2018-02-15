@@ -30,7 +30,7 @@ Deploy
 
 Moving into the project and run :
 ```
-mvn install
+mvn clean install package
 ```
 
 Stop Nuxeo
